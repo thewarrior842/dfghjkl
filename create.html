@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating an Account</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #f8f8f8;
+        }
+
+        .data {
+            width: 350px;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        h1 {
+            color: rgb(32, 205, 127);
+            margin-bottom: 20px;
+        }
+
+        .datag {
+            margin-bottom: 15px;
+            position: relative;
+        }
+
+        .datag input {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            outline: none;
+            border-radius: 5px;
+        }
+
+        .datag span {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            color: red;
+            display: none;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 10px;
+            font-size: 18px;
+            background: rgb(115, 195, 232);
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: 0.3s;
+            border-radius: 5px;
+        }
+
+        .submit-btn:hover {
+            background: rgb(241, 232, 56);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="data">
+        <h1>Create an Account</h1>
+        <form action="proc.php" method="post">
+            <div class="datag">
+                <input type="text" id="name" placeholder="Alok Rai" required>
+            </div>
+            <div class="datag">
+                <input type="email" id="email" placeholder="alokrai@gmail.com" required>
+            </div>
+            <div class="datag">
+                <input type="tel" id="phone" placeholder="7893484345" required>
+            </div>
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
